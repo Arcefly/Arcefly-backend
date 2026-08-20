@@ -15,7 +15,7 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 # Usa una imagen ligera solo con Java para correr el jar
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jre-slim
 
 WORKDIR /app
 
